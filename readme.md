@@ -23,6 +23,7 @@ $config=[
         'deny_num'=>3,
     ]; 
 
+RaxWaf::init($config); //也可以不写这行,按照默认配置初始化
 //RaxWaf::check($ip,$url,$data)
 //在一些socket应用中url可能是固定的，不需要检测,可以是 RaxWaf::check(当前请求的ip,要检测的数据) 
 //返回当前请求是否需要拦截
